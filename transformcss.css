@@ -1,0 +1,40 @@
+.a1{
+    height: 200px;
+    width: 300px;
+    position: relative;
+    margin: auto;
+}
+
+.img1{
+    height: 300px;
+    width: 300px;
+    transition: 2s;
+    border-radius: 50%;
+}
+.img2{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 50px;
+    transition: 2s;
+    top: 50px;
+    border-radius: 50%;
+}
+.img3{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    transition: 2s;
+    left: 100px;
+    top: 100px;
+}
+.a1:hover .img1{
+    transform: rotate(360deg);
+}
+.a1:hover .img2{
+    transform: rotate(-360deg);
+}
+.a1:hover .img3{
+    transform: rotate(360deg);
+}
