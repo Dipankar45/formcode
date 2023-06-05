@@ -11,6 +11,9 @@
             border-collapse: collapse;
 
         }
+        ul{
+            list-style-image: url(images/ICON.webp);
+        }
     </style>
 </head>
 <body style="background-color: cadetblue;">
@@ -32,7 +35,7 @@
     
     <!--list Tages-->
     <!--Orded list-->
-    <ol>
+    <ol type="A">
         <li>Item 1</li>
         <li>Item 2</li>
         <li>Item 3</li>
@@ -61,22 +64,26 @@
 
      <!-- maketable -->
 
-     <table>
-        <tr>
-            <th>Name</th>
-            <th>Age</th>
+     <table style="width: 200px; text-align: center;">
+        <tr style="height: 40px;">
+            <th colspan="">Name</th>
+            <th style="width: 20px;">Age</th>
+            <th>Mob.no</th>
         </tr>
         <tr>
             <td>Ram</td>
             <td>43</td>
+            <td rowspan="2">2342</td>
         </tr>
         <tr>
             <td>Sita</td>
             <td>40</td>
+            <td>2342</td>
         </tr>
         <tr>
             <td>Hunaman</td>
             <td>50</td>
+            <td>2342</td>
         </tr>
      </table>
 
