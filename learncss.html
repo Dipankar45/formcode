@@ -6,38 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learncss</title>
     <style>
-        body{
-            background-image: linear-gradient(green, red);
-
-        }
         h1{
-            color: black;
+            font-size: 20px;
+            color: aliceblue;
+            text-shadow: 0px 0px 2px pink, 1px 1px 2px red;
         }
-        p{
-            color: green;
-            font-size: 25px;
-            background-color: aqua;
-        }
-        img{
+        .item{
+            background-color: green;
             height: 200px;
-            width: 200px;
-            border-width: 50px;
-            border-style: solid;
-            border: 3px solid black;
-            border-image: url(images.jpg) 30 round;
-            outline: 10px solid black;
-            /* outline and outline-offset ke beachdistance */
-            outline-offset: 10px;
-        } 
+            /* width: 200px; */
+            border: 1px solid black;
+            /* box-shadow: 5px 5px 5px lightgreen, 5px 5px 5px black; */
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            /* grid-template-rows: 400px 400px; */
+            /* gap: 10px; */
+            /* column-gap: 10px; */
+            /* row-gap: 10px; */
+            gap: 10px 5px;
+            /* justify-content: stretch */
+        }
+        /* div:hover{
+            /* transform:translate(20px,0px); */
+            /* transform: rotate(120deg); */
+            /* transform: scale(2,3);
+        }  */ 
     </style>
 </head>
 <body>
-    <h1>hello world</h1>
-    <p>This is my paragraph</p>
-    <p>This is my paragraph</p>
-    <p style="color: brown;">This is my paragraph</p>
+    <!-- text shadow -->
+       
+        <!-- <div>
+           <img src="images/images2.jpg" alt="" style="width: 100px; height: 100px;" he>
 
-    <img src="images/just.jpg" alt="">
+        </div> -->
+        <div class="container">
+            <div class="item" style="grid-column: 1/5;" >1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+        </div>
 
 </body>
 </html>
