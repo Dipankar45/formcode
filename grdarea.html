@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grd area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: "header header header"
+                                 "aside section section"
+                                 "aside footer footer"
+                                 "button button button";
+            grid-template-rows: 50px 400px 100px 50px;
+        }
+        .item1{
+            grid-area: header;
+            background-color: red;
+            text-align: center;
+        }
+        .item2{
+            grid-area: aside;
+            background-color: blue;
+        }
+        .item3{
+            grid-area: section;
+            background-color: yellow;
+            text-align: center;
+        }
+        .item4{
+            grid-area: footer;
+            background-color: pink;
+        }
+        .item5{
+            grid-area: button;
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1"></div>
+        <div class="item2">Aside</div>
+        <div class="item3"></div>
+        <div class="item4">Footer</div>
+        <div class="item5">Button</div>
+
+
+
+
+    </div>
+</body>
+</html>
